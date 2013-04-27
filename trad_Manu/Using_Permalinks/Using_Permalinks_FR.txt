@@ -109,22 +109,22 @@ Si un article est classé dans plusieurs catégories, seules l'une d'entre elles
 
 <pre>À partir d'ici, tout reste à traduire...</pre>
 
-== Using "Pretty" permalinks ==
+== Utilisation des permaliens simplifiés ==
 
-Requirements:
+Les éléments suivants sont nécessaires pour le fonctionnement des permaliens simplifiés:
 
-*	Apache web server with the mod_rewrite module installed
-*	In WordPress's home directory,
-**		The [http://httpd.apache.org/docs/current/mod/core.html#options FollowSymLinks option] enabled
-**		[http://httpd.apache.org/docs/current/mod/core.html#allowoverride <tt>FileInfo</tt> directives] allowed (e.g. <code>AllowOverride FileInfo</code> or <code>AllowOverride All</code>) 
-**		An <tt>.htaccess</tt> file (if this file is missing, WordPress will try to create it when you activate "pretty" permalinks)	
-**		If you want WordPress to update the <tt>.htaccess</tt> file automatically, WordPress will need write access to the file.
+*	Un serveur web Apache avec le module mod_rewrite
+*	Dans le dossier racine de WordPress,
+**		L'option [http://httpd.apache.org/docs/current/mod/core.html#options FollowSymLinks] doit être activée
+**		Les [http://httpd.apache.org/docs/current/mod/core.html#allowoverride <tt>FileInfo</tt> directives] doivent être autorisées (p.ex. <code>AllowOverride FileInfo</code> ou <code>AllowOverride All</code>) 
+**		Un fichier <tt>.htaccess</tt> (si ce fichier n'existe pas,  WordPress essayera de le créer lorsque vous activez les permaliens simplifiés)	
+**		Si vous souhaitez que WordPress mette automatiquement à jour le fichier <tt>.htaccess</tt>, ce ficher doit présenter les droits d'écriture appropriés.
 
-* For lighttpd, see [[Using_Permalinks#See_Also|below]].
+* Si vous utilisez lighttpd, voir les instructions [[Using_Permalinks#See_Also|ci-dessous]].
 
-* Mac Users running WordPress locally must edit their httpd.conf file editing the AllowOverride line to read <em>AllowOverride All</em> in the <em>Directory "/Library/WebServer/Documents"</em> host instructions.  For Mac OS X 10.5.x and up this file is located in <tt>/private/etc/apache2/users/[your-username].conf</tt>, otherwise it is located at <tt>/etc/httpd/httpd.conf</tt>.
+* Les utilisateurs Mac OSX qui ont installé WordPress en local devront éditer leur fichier httpd.conf - la ligne AllowOverride doit être modifiée en <em>AllowOverride All</em> dans les instructions sous <em>Directory "/Library/WebServer/Documents"</em>.  Sous Mac OSX 10.5.x et ultérieur, ce fichier se trouve sous <tt>/private/etc/apache2/users/[your-username].conf</tt>, dans les systèmes plus anciens sous <tt>/etc/httpd/httpd.conf</tt>.
 
-When you create or update a "pretty" permalink structure, WordPress will generate rewrite rules and attempt to insert them into the proper <tt>.htaccess</tt> file. If it can't, it will say something like <tt>You should update your .htaccess now</tt> and print out the rules for you to copy and paste into the file (put them at the end).
+Lorsque vous créez ou mettez à jour votre structure de permaliens, WordPress va générer les règles d'écriture appropriées, et tentera de les insérer dans le fichier <tt>.htaccess</tt>. Si cela ne se fait pas automatiquement, vous verrez un message disant <tt>Vous devriez mettre à jour le fichier .htaccess now</tt> et vous montrera le code à copier-coller dans ce fichier (mettez-le en fin de fichier).
 
 In WordPress 2.0+ versions, you'll probably need to do this only once, because WordPress does the rewriting internally. If you ever move your WordPress home directory (''Site address''), you'll need to repeat this step.
 
