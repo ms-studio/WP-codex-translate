@@ -20,7 +20,7 @@ Ce système a plusieurs avantages:
 - Il est possible de travailler sur les traductions à tout moment, même sans connexion Internet.
 - Les autres traducteurs peuvent voir les avancées de leurs collaborateurs/trices, et les relire.
 - Chacun peut contribuer des termes au **Glossaire**.
-- Le système est résilient et décentralisé. Même en cas de perte, vol, plantage de disque dûr, incendie, innondation, café renversé, faillite de GitHub, hackage de DropBox, effacement du Codex, il restera toujours une copie quelque part.
+- Le système est résilient et décentralisé. Même en cas de perte, vol, plantage de disque dûr, incendie, innondation, café renversé, acquisition de GitHub, hackage de DropBox, effacement du Codex, il restera toujours une copie quelque part.
 
 ## Liens ##
 
