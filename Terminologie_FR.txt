@@ -1,25 +1,39 @@
-## Dictionnaire de la terminologie WordPress ##
+## Dictionnaire EN/FR de la terminologie WordPress ##
 
 Ce document est destiné à l'usage des traducteurs du Codex
 
 ***
 
-Checkbox = case à cocher
+Category = Catégorie
 
-Dashboard = tableau de bord
+Checkbox = Case à cocher
+
+Comment = Commentaire 
+
+Dashboard = Tableau de bord
+
+Page = Page
 
 Panel (ex: In the Settings → Permalinks panel ) = page de configuration (?)
 
 Panel (ex: the Edit Post/Page panel = interface d'édition (?)
 
-Permalink = permalien
+Permalink = Permalien
 
-Pretty Permalinks = permaliens simplifiés
+Post = Article 
+
+Pretty Permalinks = Permaliens simplifiés
 ( note: dans Prestashop, c’est URL simplifiée / ou "Friendly URLs")
 
-Tags (structure tags) = marqueurs de structure
+Tag = Marqueur
 
-Template = modèle (changé par Max)
+Tags (structure tags) = Marqueurs de structure
+
+Template = Modèle
+
+Theme = Thème 
+
+The Loop = "La Boucle" ou "The Loop (la boucle)" 
 
 ***
 
